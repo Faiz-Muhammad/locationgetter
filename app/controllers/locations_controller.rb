@@ -10,7 +10,6 @@ class LocationsController < ApplicationController
   def submit
     visitor_latitude = request.location.latitude
     visitor_longitude = request.location.longitude
-    debugger
     @data = Location.new(longitude: visitor_longitude, latitude: visitor_latitude)
     @data.save
     redirect_to root_path
