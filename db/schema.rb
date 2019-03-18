@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_03_18_124550) do
+ActiveRecord::Schema.define(version: 2019_03_18_143709) do
 
   create_table "active_admin_comments", force: :cascade do |t|
     t.string "namespace"
@@ -53,8 +53,8 @@ ActiveRecord::Schema.define(version: 2019_03_18_124550) do
   end
 
   create_table "locations", force: :cascade do |t|
-    t.string "latitude"
-    t.string "longitude"
+    t.decimal "latitude"
+    t.decimal "longitude"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "location"
